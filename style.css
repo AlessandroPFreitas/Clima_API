@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button,
+select,
+textarea {
+  /* font-family: "Roboto", serif; */
+  font-family: "Open Sans", serif;
+}
+
+body {
+  background-image: url(./img/background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 100vh;
+}
+
+.wrapper {
+  /* background-color: white; */
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  padding: 2rem;
+}
+
+#wrapper__search {
+  display: flex;
+  height: 45px;
+
+  margin-bottom: 15px;
+}
+
+#wrapper__search button[type="submit"],
+.search__input {
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+.search__input {
+  border-radius: 0 5px 5px 0;
+  border: none;
+  flex: 1;
+  padding-left: 10px;
+}
+
+#wrapper__search button[type="submit"] {
+  padding: 10px 15px;
+  margin-left: -1px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  /* background-color: hsla(0, 0%, 0%, 0.596); */
+
+  
+  font-size: 20px;
+  color: black;
+font-weight: 100;
+
+
+  cursor: pointer;
+}
+
+.wrapper__card {
+  display: none;
+  flex-direction: column;
+  backdrop-filter: blur(5px);
+  background-color: hsla(0, 0%, 0%, 0.143);
+  margin: 0 auto;
+  padding: 15px;
+  font-family: Arial,Helvetica,sans-serif;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.852);
+}
+
+.card{
+  display: none;
+  flex-direction: column;
+
+}
+
+.card__name{
+  font-size: 1.5rem;
+}
+
+
+.card__forecast{
+  display: flex;
+  align-items: end;
+  font-size: 1.7rem;
+  margin: 5px 0 10px 0;
+}
+
+.card__temp{
+ position: relative;
+}
+.temp__celsius{
+  position: absolute;
+  bottom: 30%;
+  font-size: 1rem;
+}
+.card__emoji{
+ margin-right: 0.5rem;
+}
+
+#error-message{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card__humid{
+  font-size: 0.9rem;
+}
+
+.hidden{
+  display: none;
+}
+
+.visible{
+  display: flex;
+}

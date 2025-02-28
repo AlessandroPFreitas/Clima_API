@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <script src="https://kit.fontawesome.com/ec0cb68dbc.js" crossorigin="anonymous"></script>
+    <title>City Weather</title>
+  </head>
+  <body>
+
+    <div class="wrapper">
+        <form id="wrapper__search" >
+          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <input type="text" class="search__input" placeholder="Digite o nome da sua cidade" />
+        </form>
+        <section class="wrapper__card">
+          <div class="card" >
+            <p class="card__name"></p>
+            <div class="card__forecast">
+              <p class="card__emoji"></p>
+              <p class="card__temp"></p>
+            </div>
+            <p class="card__humid"></p>
+          </div>
+          <span id="error-message"></span>
+        </section>
+    </div>
+  </body>
+</html>
