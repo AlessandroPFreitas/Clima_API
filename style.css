@@ -108,11 +108,11 @@ font-weight: 100;
 .card__temp{
  position: relative;
 }
-.temp__celsius{
+/* .temp__celsius{
   position: absolute;
   bottom: 30%;
   font-size: 1rem;
-}
+} */
 .card__emoji{
  margin-right: 0.5rem;
 }
